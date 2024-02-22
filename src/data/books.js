@@ -1,32 +1,44 @@
-export const authors = [
+export const books = [
   {
-    name: 'Harper Lee',
-    age: 45,
-    country: 'USA',
-    books: ["Fingersmith", "The Night Watch", "Tipping the Velvet"]
+    name: 'The Catcher in the Rye',
+    pages: 234,
+    title: 'Harper Lee',
+    price: 10,
   },
   {
-    name: 'George Orwell',
-    age: 55,
-    country: 'UK',
-    books: ["The Catcher in the Rye", "To Kill a Mockingbird"]
+    name: 'To Kill a Mockingbird',
+    pages: 123,
+    title: 'Harper Lee',
+    price: 15,
   },
   {
-    name: 'Aldous Huxley',
-    age: 65,
-    country: 'USA',
-    books: ["1984", "Animal Farm"]
+    name: '1984',
+    pages: 345,
+    title: 'George Orwell',
+    price: 20,
   },
   {
-    name: 'Ray Bradbury',
-    age: 75,
-    country: 'USA',
-    books: ["Brave New World", "Fahrenheit 451"]
+    name: 'Animal Farm',
+    pages: 456,
+    title: 'George Orwell',
+    price: 25,
   },
   {
-    name: 'F. Scott Fitzgerald',
-    age: 85,
-    country: 'USA',
-    books: ["The Great Gatsby"]
+    name: 'Brave New World',
+    pages: 567,
+    title: 'Aldous Huxley',
+    price: 30,
+  },
+  {
+    name: 'Fahrenheit 451',
+    pages: 678,
+    title: 'Ray Bradbury',
+    price: 35,
+  },
+  {
+    name: 'The Great Gatsby',
+    pages: 789,
+    title: 'F. Scott Fitzgerald',
+    price: 40,
   }
 ]

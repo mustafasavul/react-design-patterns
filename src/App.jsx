@@ -1,8 +1,12 @@
 import './App.css'
 import { LargeAuthorListItem } from './components/authors/LargeListItems'
 import { SmallAuthorListItem } from './components/authors/SmallListItems'
+import { LargeBookListItems } from './components/books/LargeListItems'
+import { SmallBookListItems } from './components/books/SmallListItems'
+import { NumberedList } from './components/lists/Numbered'
 import { RegularList } from './components/lists/Regular'
-import { authors } from './data/books'
+import { authors } from './data/authors'
+import { books } from './data/books'
 
 // SplitScreen Components
 
@@ -50,12 +54,29 @@ function App() {
        />
 
 
-      <RegularList 
+      <NumberedList 
         items={authors}
         sourceName={'authors'}
         ItemComponent={LargeAuthorListItem}
        />
-    </>
+
+      <hr style={{
+        margin: '100px 0'
+      
+      }} />
+
+      <RegularList 
+        items={books}
+        sourceName={'book'}
+        ItemComponent={SmallBookListItems}
+       />
+
+      <NumberedList 
+        items={books}
+        sourceName={'book'}
+        ItemComponent={LargeBookListItems}
+       />
+    </>     
   )
 }
 
