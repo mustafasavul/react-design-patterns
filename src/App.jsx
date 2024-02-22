@@ -1,4 +1,5 @@
 import './App.css'
+import { Modal } from './components/Modal'
 import { LargeAuthorListItem } from './components/authors/LargeListItems'
 import { SmallAuthorListItem } from './components/authors/SmallListItems'
 import { LargeBookListItems } from './components/books/LargeListItems'
@@ -45,6 +46,10 @@ function App() {
         <LeftSideComp title={'Left Side'}/>
         <RightSideComp title={'Right Side'} />
       </SplitScreen> */}
+
+      <Modal>
+        <LargeBookListItems book={books[0]}/>
+      </Modal>
 
 
       <RegularList 
